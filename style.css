@@ -1,0 +1,71 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,700&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+*{
+    font-family: 'Playfair Display', serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* HEADER SECTION */
+header{
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #131313;
+}
+nav>ul{
+    display: flex;
+    
+}
+nav li{
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+nav li a{
+    text-decoration: none;
+    color: #424242;
+}
+/* banner section */
+
+.banner-container{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+.banner-discription{
+    color: #727272;
+}
+.btn-primary{
+    color: #FFF;
+    border-radius: 8px;
+    font-size: 18px;
+    background: #FF900E;
+    padding: 20px 25px;
+    border: 0;
+    cursor: pointer;
+    margin-bottom: 50px
+}
+.banner img{
+    width: 100%;
+}
+
+/* media query style */
+
+@media screen and (max-width: 576) {
+    
+}
