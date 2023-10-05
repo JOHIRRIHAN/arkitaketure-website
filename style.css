@@ -5,6 +5,9 @@
     font-family: 'Playfair Display', serif;
     font-family: 'Work Sans', sans-serif;
 }
+.text-light-gry{
+    color: #727272;
+}
 
 /* HEADER SECTION */
 header{
@@ -42,14 +45,15 @@ nav li a{
     text-align: center;
     margin: 0 auto;
 }
+#center{
+    width: auto;
+}
 .banner-title{
     font-size: 4rem;
     font-weight: 700;
     color: #131313;
 }
-.banner-discription{
-    color: #727272;
-}
+ 
 .btn-primary{
     color: #FFF;
     border-radius: 8px;
@@ -64,8 +68,92 @@ nav li a{
     width: 100%;
 }
 
+/* main style */
+
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+    padding: 0 250px;
+}
+
+/* team style */
+.team-container {
+    display: flex;
+    align-items: center;
+    /* margin-left: 70px;
+    margin-right: 70px; */
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+    
+} 
+.team-contant{
+    margin: 76px;
+}
+.team-title{
+    color:#727272;
+    font-size: 35px;
+    font-weight: 500px;
+    margin-bottom: 15px;
+}
+.black{
+    color: #131313;
+    font-weight: 700px;
+}
+.tomato{
+    color: #FF900E;
+    font-weight: 700;
+}
+.text-light-gry{
+    font-weight: 400px;
+    font-size: 10px;
+  
+    width:300px;
+    margin-bottom: 32px;
+}
+/* fact section */
+.fact-h3{
+    color: #131313;
+    font-weight: 700px;
+    font-size: 24px;
+}
+.face-card-container {
+    display: flex;
+    justify-content: space-around;
+}
+.face-card-container .card{
+    border-radius: 8px;
+    border: 1px solid  #FF900E;
+    text-align: center;
+}
+.card-details{
+    font-size: 10px;
+}
 /* media query style */
 
-@media screen and (max-width: 576) {
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav, .team-container{
+        flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: 1fr;
+         
+    }
+    
+}
+/* mediun device style */
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+   nav, .team-container{
+    flex-direction: column;
+    }
+    header{
+        padding: 50px;
+    }
     
 }
