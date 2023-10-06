@@ -243,19 +243,26 @@ main{
     }
     nav, .team-container, .face-card-container,
      .sponsor-img-container, .feature, .footer-section{
+
         flex-direction: column;
     }
     .team-img-container{
         grid-template-columns: 1fr;
          
     }
+    .team-img-container img{
+        height: 350px;
+        width: 350px;
+    }
     .feature-img img{
         width: 100%;
     }
      
+     
     .team-contant{
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+        
     }
     .card{
          width: 100%;
